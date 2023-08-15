@@ -69,7 +69,7 @@ def main(page: ft.Page):
             for i in columns:
                 ct.value = '{co}/{totalcolumns}'.format(co = columns.index(i)+1, totalcolumns=totalcolumns)
                 pb.value = 0.0 
-                page.update()  
+                page.update()   
                 if i in df.columns:
                     for ind in df.index:
                         df.replace(df[i][ind], generate_random(length=len(str(df[i][ind])),data_type=df[i][ind]), inplace=True)
