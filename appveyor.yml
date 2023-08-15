@@ -11,6 +11,7 @@ environment:
     secure: nJq0vhcsoxHg/XfqreXfulghToF4PAuTmSAXnuCx980Gz8BbY4msEgnYPho1c3+8qRPfC2grDbdmDEE9SdKVr5k9LC9mRhn9w3jUK3o7QapSl8vXwVD8+zXf9DstJUvm
 
 install:
+- pip install --upgrade pip setuptools wheel
 - pip install -r requirements.txt
 
 build_script:
