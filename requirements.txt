@@ -2,3 +2,4 @@ flet
 pyinstaller
 numpy
 pandas
+
