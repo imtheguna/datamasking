@@ -8,7 +8,7 @@ Introducing our versatile DataMasking Tool, compatible with Mac, Windows, and Li
 | :---: | :---: | :-----: |
 |   ✔️   | ✔️  |  ✔️   | 
 
-To run the application, download the application for [Mac](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-linux.tar.gz), [Linux](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-linux.tar.gz), [Windows](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-windows.zip)
+To run the application, download the application for [Mac](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-macos.tar.gz), [Linux](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-linux.tar.gz), [Windows](https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.25/DataMasking-windows.zip)
 
 ### Step 1
   Once the application downloaded, Enter the delimiter, header and select the file.
