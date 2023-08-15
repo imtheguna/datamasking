@@ -15,11 +15,11 @@ install:
 - pip install -r requirements.txt
 
 build_script:
-- flet pack main.py --name DataMasking --add-data "assets:assets" --icon dataicon.png --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2023 GKTwin Apps"
+- flet pack main.py --name DataMasking --add-data "assets:assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2023 GKTwin Apps"
 
 test: off
 
-# Publish artifacts to GitHub Releases on "tag" builds
+# Publish artifacts to GitHub Releases on "tag" builds --icon dataicon.png 
 deploy:
   provider: GitHub
   auth_token: $(GITHUB_TOKEN)
