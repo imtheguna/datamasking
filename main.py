@@ -64,7 +64,7 @@ def main(page: ft.Page):
             global checkbox,submitbtenble,filename,maskingcolumns,totalcolumns
             totalcolumns = len(columns)
             ct.value = '1/{totalcolumns}'.format(totalcolumns=totalcolumns)
-            lenght = (1/lenght)
+            lenght = (1/len(df))
             page.update()
             for i in columns:
                 ct.value = '{co}/{totalcolumns}'.format(co = columns.index(i)+1, totalcolumns=totalcolumns)
