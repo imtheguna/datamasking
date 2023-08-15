@@ -18,10 +18,14 @@ test: off
 
 # Publish artifacts to GitHub Releases on "tag" builds --icon dataicon.png 
 deploy:
+  release: DataMasking-v$(APPVEYOR_BUILD_VERSION)
+  description: 'Data Masking Tool for ETL'
   provider: GitHub
   auth_token: $(GITHUB_TOKEN)
   on:
+    branch: master
     APPVEYOR_REPO_TAG: true
+
 
 #
 #   Windows package
@@ -74,16 +78,3 @@ for:
 
   build_script:
   - flet pack main.py --name DataMasking --add-data "assets:assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2023 GKTwin Apps"
-
-deploy:
-  release: DataMasking-v$(APPVEYOR_BUILD_VERSION)
-  description: 'Data Masking Tool for ETL'
-  provider: GitHub
-  auth_token:
-    secure: nJq0vhcsoxHg/XfqreXfulghToF4PAuTmSAXnuCx980Gz8BbY4msEgnYPho1c3+8qRPfC2grDbdmDEE9SdKVr5k9LC9mRhn9w3jUK3o7QapSl8vXwVD8+zXf9DstJUvm # your encrypted token from GitHub
-  artifact: /.*\.            # upload all NuGet packages to release assets
-  draft: false
-  prerelease: false
-  on:
-    branch: master                 # release from master branch only
-    APPVEYOR_REPO_TAG: true        # deploy on tag push only
