@@ -14,8 +14,6 @@ install:
 - C:\Python311\python.exe -m pip install --upgrade pip setuptools wheel
 - pip install -r requirements.txt
 
-build_script:
-- flet pack main.py --name DataMasking --add-data "assets:assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2023 GKTwin Apps"
 
 test: off
 
@@ -40,6 +38,9 @@ for:
 
   artifacts:
   - path: DataMasking-windows.zip
+  
+  build_script:
+    - flet pack main.py --name DataMasking --add-data "assets;assets" --product-name DataMasking --product-version "0.0.1" --copyright "Copyright (c) 2023 GKTwin Apps"
 
 #
 #   macOS package
