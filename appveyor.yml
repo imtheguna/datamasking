@@ -19,7 +19,7 @@ test: off
 # Publish artifacts to GitHub Releases on "tag" builds --icon dataicon.png 
 deploy:
   release: DataMasking-v$(APPVEYOR_BUILD_VERSION)
-  description: 'Data Masking Tool for ETL'
+  description: 'DataMasking Tool for ETL'
   provider: GitHub
   auth_token: $(GITHUB_TOKEN)
   on:
