@@ -1,9 +1,9 @@
-# A datamasking Flet app
+# A Datamasking Tool
 
-An example of a minimal Flet app.
+Introducing our versatile DataMasking Tool, compatible with Mac, Windows, and Linux systems. Safeguard sensitive information effortlessly with advanced data masking techniques, ensuring privacy and compliance. Easily redact, encrypt, or anonymize confidential data within files, providing comprehensive security across multiple platforms. Elevate your data protection strategy with our cross-platform solution for seamless and reliable data masking.
 
-To run the app:
+To run the application, download the application from
 
-```
-flet run [app_directory]
-```
+Mac     - https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.18/DataMasking-macos.tar.gz
+Linux   - https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.18/DataMasking-linux.tar.gz
+Windows - https://github.com/imtheguna/datamasking/releases/download/DataMasking-v1.0.18/DataMasking-windows.zip
