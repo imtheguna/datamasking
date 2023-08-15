@@ -24,6 +24,7 @@ deploy:
   auth_token: $(GITHUB_TOKEN)
   on:
     branch: main
+    APPVEYOR_REPO_TAG_MAIN: true
     APPVEYOR_REPO_TAG: true
     force_update: true
 
